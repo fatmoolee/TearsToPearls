@@ -45,6 +45,7 @@
   </script>
 
   <style>
+    /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -200,7 +201,7 @@
       </div>
 
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-brand-100 shadow-sm space-y-8">
-        <p class="text-brand-800 text-sm sm:text-base leading-relaxed sm:leading-loose text-center">
+        <p class="text-brand-800 text-sm sm:text-base leading-relaxed sm:leading-loose text-center break-words">
           五年後收到當時一位參與者寄來的訊息，<br class="hidden sm:inline">
           分享了他這幾年走過的感情心路歷程。<br>
           再次被深深感動之餘，也深深明白：<br class="hidden sm:inline">
@@ -252,14 +253,14 @@
         </div>
 
         <!-- 溫馨提醒 Notice Box -->
-        <div class="bg-amber-50/70 rounded-2xl p-5 border border-amber-200/70 text-amber-900 space-y-2">
+        <div class="bg-amber-50/70 rounded-2xl p-5 border border-amber-200/70 text-amber-900 space-y-2 overflow-hidden">
           <div class="flex items-center gap-2 font-bold text-sm text-amber-800">
             <i class="fa-solid fa-heart text-amber-500"></i>
             <span>溫馨提醒</span>
           </div>
-          <p class="text-xs sm:text-sm text-amber-800/90 leading-relaxed">
-            <span class="inline-block whitespace-nowrap">這不是一個快速配對的聯誼會，</span><span class="inline-block whitespace-nowrap">而是一段陪你「預備自己、安心等待」的旅程。</span><br>
-            <span class="inline-block whitespace-nowrap">我們無法保證參加後立刻出現交往對象，</span><span class="inline-block whitespace-nowrap">但我們能保證，在等待愛的路上，</span><span class="inline-block whitespace-nowrap">你不再是一個人。</span>
+          <p class="text-xs sm:text-sm text-amber-800/90 leading-relaxed break-words">
+            這不是一個快速配對的聯誼會，而是一段陪你「預備自己、安心等待」的旅程。<br>
+            我們無法保證參加後立刻出現交往對象，但我們能保證，在等待愛的路上，你不再是一個人。
           </p>
         </div>
 
@@ -302,9 +303,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">序曲</span>
-                  <span class="font-bold text-white block whitespace-nowrap">眼淚變珍珠</span>
+                  <span class="font-bold text-white block">眼淚變珍珠</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-09-02', '序曲：眼淚變珍珠')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -322,9 +323,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap text-[9.5px]">停止比較：</span>
-                  <span class="font-bold text-white block whitespace-nowrap">別人幸福不代表我落後</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block text-[9.5px]">停止比較：</span>
+                  <span class="font-bold text-white block">別人幸福不代表我落後</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-09-09', '停止比較：別人幸福不代表我落後')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -342,10 +343,10 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">謊言①</span>
-                  <span class="font-normal opacity-95 inline-block whitespace-nowrap">有人愛我，</span>
-                  <span class="font-bold text-white inline-block whitespace-nowrap">我才有價值</span>
+                  <span class="font-normal opacity-95 inline-block">有人愛我，</span>
+                  <span class="font-bold text-white inline-block">我才有價值</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-09-16', '謊言①：有人愛我，我才有價值')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -363,10 +364,10 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">謊言②</span>
-                  <span class="font-normal opacity-95 inline-block whitespace-nowrap">單身代表</span>
-                  <span class="font-bold text-white inline-block whitespace-nowrap">我不夠好</span>
+                  <span class="font-normal opacity-95 inline-block">單身代表</span>
+                  <span class="font-bold text-white inline-block">我不夠好</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-09-23', '謊言②：單身代表我不夠好')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -384,10 +385,10 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">謊言③</span>
-                  <span class="font-normal opacity-95 inline-block whitespace-nowrap">結婚以後，</span>
-                  <span class="font-bold text-white inline-block whitespace-nowrap">我就不會孤單</span>
+                  <span class="font-normal opacity-95 inline-block">結婚以後，</span>
+                  <span class="font-bold text-white inline-block">我就不會孤單</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-09-30', '謊言③：結婚以後，我就不會孤單')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -411,10 +412,10 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="font-normal opacity-95 block text-[9.5px]">停止複製：</span>
-                  <span class="font-bold text-white block whitespace-nowrap">不讓原生家庭</span>
-                  <span class="font-bold text-white block whitespace-nowrap">決定我的關係</span>
+                  <span class="font-bold text-white block">不讓原生家庭</span>
+                  <span class="font-bold text-white block">決定我的關係</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-10-07', '停止複製：不讓原生家庭決定我的關係')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -432,9 +433,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">原諒，不代表</span>
-                  <span class="font-bold text-white block whitespace-nowrap">否認自己曾經受過傷</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">原諒，不代表</span>
+                  <span class="font-bold text-white block">否認自己曾經受過傷</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-10-14', '原諒，不代表否認自己曾經受過傷')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -452,9 +453,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">已經等好久了，</span>
-                  <span class="font-bold text-white block whitespace-nowrap">我還能做什麼？</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">已經等好久了，</span>
+                  <span class="font-bold text-white block">我還能做什麼？</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-10-21', '已經等好久了，我還能做什麼？')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -472,9 +473,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">如何面對尋求</span>
-                  <span class="font-bold text-white block whitespace-nowrap">但沒有結果的失落？</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">如何面對尋求</span>
+                  <span class="font-bold text-white block">但沒有結果的失落？</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-10-28', '如何面對尋求但沒有結果的失落？')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -498,9 +499,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">友情也是需要</span>
-                  <span class="font-bold text-white block whitespace-nowrap">經營的重要關係</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">友情也是需要</span>
+                  <span class="font-bold text-white block">經營的重要關係</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-11-04', '友情也是需要經營的重要關係')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -518,10 +519,10 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">面對拒絕</span>
-                  <span class="font-normal opacity-95 block whitespace-nowrap">沒有被選擇，</span>
-                  <span class="font-bold text-white block whitespace-nowrap">不等於不值得</span>
+                  <span class="font-normal opacity-95 block">沒有被選擇，</span>
+                  <span class="font-bold text-white block">不等於不值得</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-11-11', '面對拒絕：沒有被選擇，不等於不值得')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -539,9 +540,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">家人的擇偶期待</span>
-                  <span class="font-bold text-white block whitespace-nowrap">與自己的選擇</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">家人的擇偶期待</span>
+                  <span class="font-bold text-white block">與自己的選擇</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-11-18', '家人的擇偶期待與自己的選擇')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -559,9 +560,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">不要因為害怕錯過，</span>
-                  <span class="font-bold text-white block whitespace-nowrap">而勉強接受不適合</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">不要因為害怕錯過，</span>
+                  <span class="font-bold text-white block">而勉強接受不適合</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-11-25', '不要因為害怕錯過，而勉強接受不適合')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -585,9 +586,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">身邊的人都結婚了，</span>
-                  <span class="font-bold text-white block whitespace-nowrap">如何面對焦慮？</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">身邊的人都結婚了，</span>
+                  <span class="font-bold text-white block">如何面對焦慮？</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-12-02', '身邊的人都結婚了，如何面對焦慮？')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -605,9 +606,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-bold text-white block whitespace-nowrap">主動認識與</span>
-                  <span class="font-bold text-white block whitespace-nowrap">被動等待之間的平衡</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-bold text-white block">主動認識與</span>
+                  <span class="font-bold text-white block">被動等待之間的平衡</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-12-09', '主動認識與被動等待之間的平衡')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -625,9 +626,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
                   <span class="text-brand-200 text-[9.5px] block font-normal mb-0.5">釋出好感</span>
-                  <span class="font-bold text-white block whitespace-nowrap">自然表達興趣與欣賞</span>
+                  <span class="font-bold text-white block">自然表達興趣與欣賞</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-12-16', '釋出好感：自然表達興趣與欣賞')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -645,9 +646,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">等候與主動：</span>
-                  <span class="font-bold text-white block whitespace-nowrap">為感情踏出合宜的一步</span>
+                <p class="font-title text-[10px] sm:text-[11.5px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">等候與主動：</span>
+                  <span class="font-bold text-white block">為感情踏出合宜的一步</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-12-23', '等候與主動：為感情踏出合宜的一步')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -665,9 +666,9 @@
                 <span class="text-brand-400 text-[10px] mt-0.5"><i class="fa-solid fa-sparkles"></i></span>
               </div>
               <div class="flip-card-back bg-brand-600 text-white p-2.5 border-2 border-brand-500 shadow-inner flex flex-col items-center justify-center text-center">
-                <p class="font-title text-[9.5px] sm:text-[11px] leading-snug mb-1.5 px-1">
-                  <span class="font-normal opacity-95 block whitespace-nowrap">上帝預備的那一位</span>
-                  <span class="font-bold text-white block whitespace-nowrap">帶來的期待與迷思</span>
+                <p class="font-title text-[9.5px] sm:text-[11px] leading-snug mb-1.5 px-1 break-words">
+                  <span class="font-normal opacity-95 block">上帝預備的那一位</span>
+                  <span class="font-bold text-white block">帶來的期待與迷思</span>
                 </p>
                 <button onclick="addToCalendarFromCard(event, '2026-12-30', '上帝預備的那一位帶來的期待與迷思')" class="bg-white/20 hover:bg-white/30 text-white text-[9px] font-medium px-2 py-0.5 rounded-full border border-white/40 transition-colors flex items-center gap-1 shrink-0">
                   <i class="fa-regular fa-calendar-plus text-[8px]"></i> 行事曆
@@ -694,7 +695,7 @@
           <div class="space-y-1.5">
             <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-block">1對1 管道 · 私人傾聽</span>
             <h3 class="font-title text-xl font-bold text-brand-900 pt-1">肥牡蠣 官方 LINE</h3>
-            <p class="text-xs text-brand-700 leading-relaxed max-w-xs mx-auto">
+            <p class="text-xs text-brand-700 leading-relaxed max-w-xs mx-auto break-words">
               專屬你的私人樹洞。<br>
               適合想安靜接收 Zoom 連結與活動提醒、<br class="hidden sm:inline">
               單獨諮詢，或不習慣在群組發言的你。
@@ -716,7 +717,7 @@
           <div class="space-y-1.5">
             <span class="bg-sky-100 text-sky-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-block">匿名群組 · 多人交流</span>
             <h3 class="font-title text-xl font-bold text-brand-900 pt-1">戀愛指南LuvBar</h3>
-            <p class="text-xs text-brand-700 leading-relaxed max-w-xs mx-auto">
+            <p class="text-xs text-brand-700 leading-relaxed max-w-xs mx-auto break-words">
               溫暖熱鬧的匿名社群。<br>
               適合想聽聽不同故事與觀點、<br class="hidden sm:inline">
               分享感情日常、尋找同行夥伴與交流的你。
@@ -741,8 +742,8 @@
         
         <div class="text-center max-w-xl mx-auto space-y-2 mb-8">
           <h2 class="font-title text-2xl sm:text-3xl font-bold text-brand-900">有人陪你一起盼望、安心等待</h2>
-          <p class="text-xs sm:text-sm text-brand-600">
-            <span class="inline-block whitespace-nowrap">Zoom 聚會連結將於</span> <strong class="text-brand-800 underline underline-offset-4 decoration-brand-300 inline-block whitespace-nowrap">8/31（一）</strong> <span class="inline-block whitespace-nowrap">統一寄出，請務必確保 Email 填寫正確！</span>
+          <p class="text-xs sm:text-sm text-brand-600 break-words">
+            Zoom 聚會連結將於 <strong class="text-brand-800 underline underline-offset-4 decoration-brand-300">8/31（一）</strong> 統一寄出，請務必確保 Email 填寫正確！
           </p>
         </div>
 
@@ -752,15 +753,56 @@
             <label class="block text-xs sm:text-sm font-semibold text-brand-800 mb-1.5">
               姓名 / 暱稱 <span class="text-red-500">*</span>
             </label>
-            <input type="text" id="input-name" required placeholder="例：陳小姐 / Alex" class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
+            <input type="text" id="input-name" required class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
           </div>
 
           <div>
             <label class="block text-xs sm:text-sm font-semibold text-brand-800 mb-1.5">
               Email 電子信箱 <span class="text-red-500">*</span>
             </label>
-            <input type="email" id="input-email" required placeholder="your.name@example.com" class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
+            <input type="email" id="input-email" required class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
             <p class="text-[11px] text-brand-500 mt-1">用於發送 Zoom 聚會連結</p>
+          </div>
+
+          <div>
+            <label class="block text-xs sm:text-sm font-semibold text-brand-800 mb-1.5">
+              性別 <span class="text-red-500">*</span>
+            </label>
+            <select id="input-gender" required class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
+              <option value="" disabled selected>請選擇您的性別</option>
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs sm:text-sm font-semibold text-brand-800 mb-1.5">
+              年齡 <span class="text-red-500">*</span>
+            </label>
+            <select id="input-age" required class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
+              <option value="" disabled selected>請選擇您的年齡區間</option>
+              <option value="20-24歲">20 - 24 歲</option>
+              <option value="25-29歲">25 - 29 歲</option>
+              <option value="30-34歲">30 - 34 歲</option>
+              <option value="35-39歲">35 - 39 歲</option>
+              <option value="40-44歲">40 - 44 歲</option>
+              <option value="45-49歲">45 - 49 歲</option>
+              <option value="50歲以上">50 歲以上</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs sm:text-sm font-semibold text-brand-800 mb-1.5">
+              感情狀態 <span class="text-red-500">*</span>
+            </label>
+            <select id="input-relationship" required class="w-full px-4 py-2.5 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-400/50 bg-brand-50/20 text-sm">
+              <option value="" disabled selected>請選擇您的感情狀態</option>
+              <option value="單身，目前無特定對象">單身，目前無特定對象</option>
+              <option value="單身，目前有欣賞／認識中的對象">單身，目前有欣賞／認識中的對象</option>
+              <option value="單身，療傷恢復中">單身，療傷恢復中</option>
+              <option value="有伴侶（未婚）">有伴侶（未婚）</option>
+              <option value="已婚">已婚</option>
+            </select>
           </div>
 
           <div>
@@ -793,8 +835,8 @@
           <!-- 個人隱私與資訊訂閱同意 -->
           <div class="flex items-start gap-2.5 pt-1">
             <input type="checkbox" id="privacy-optin" checked class="mt-0.5 w-4 h-4 text-brand-600 border-brand-300 rounded focus:ring-brand-400 shrink-0 cursor-pointer">
-            <label for="privacy-optin" class="text-xs text-brand-700/90 leading-relaxed cursor-pointer select-none">
-              <span class="inline-block whitespace-nowrap">我同意個人資料用於本次活動聯繫，</span><span class="inline-block whitespace-nowrap">並願意接收「愛盟家庭基金會 / 肥牡蠣的大小事」未來的婚姻感情相關資訊與活動通知。</span>
+            <label for="privacy-optin" class="text-xs text-brand-700/90 leading-relaxed cursor-pointer select-none break-words">
+              我同意個人資料用於本次活動聯繫，並願意接收「愛盟家庭基金會 / 肥牡蠣的大小事」未來的婚姻感情相關資訊與活動通知。
             </label>
           </div>
 
@@ -817,23 +859,24 @@
     </div>
   </footer>
 
-  <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 border border-brand-100 shadow-2xl space-y-5 text-center transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+  <div id="success-modal" class="fixed inset-0 z-[999999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-md w-full p-5 sm:p-7 border border-brand-100 shadow-2xl space-y-4 text-center transform scale-95 transition-all duration-300 max-h-[85vh] overflow-y-auto my-auto relative">
       
-      <div class="w-14 h-14 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center mx-auto text-2xl shadow-inner">
+      <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center mx-auto text-xl sm:text-2xl shadow-inner shrink-0">
         <i class="fa-solid fa-sparkles"></i>
       </div>
 
-      <div class="space-y-3">
-        <h3 class="font-title text-xl sm:text-2xl font-bold text-brand-900">報名成功！感謝您的參與</h3>
+      <div class="space-y-2">
+        <h3 class="font-title text-lg sm:text-2xl font-bold text-brand-900 leading-snug">報名成功！感謝您的參與</h3>
         
-        <p class="text-xs sm:text-sm text-brand-800 leading-relaxed bg-brand-50/80 p-3.5 rounded-2xl border border-brand-100 text-left">
-          <span class="inline-block whitespace-nowrap">Zoom 聚會連結將於</span> <strong class="text-brand-900 font-bold inline-block whitespace-nowrap">8/31（一）</strong> <span class="inline-block whitespace-nowrap">統一寄至您的 Email。</span><br><br>
-          <span class="inline-block whitespace-nowrap">擔心錯過信件？</span><span class="inline-block whitespace-nowrap">歡迎加入我們的專屬社群，</span><span class="inline-block whitespace-nowrap">我們會提前發送貼心提醒：</span>
+        <p class="text-xs sm:text-sm text-brand-800 leading-relaxed bg-brand-50/80 p-3 sm:p-4 rounded-2xl border border-brand-100 text-left break-words">
+          Zoom 聚會連結將於 <strong class="text-brand-900 font-bold">8/31（一）</strong> 統一寄至您的 Email。<br><br>
+          擔心錯過信件？歡迎加入我們的專屬社群，我們會提前發送貼心提醒：
         </p>
       </div>
 
-      <div class="grid grid-cols-1 gap-2.5 pt-1">
+      <!-- Quick Social Buttons -->
+      <div class="grid grid-cols-1 gap-2 pt-0.5">
         <a href="https://lin.ee/ThMxRv1" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-medium py-2.5 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition-transform">
           <i class="fa-brands fa-line text-lg"></i>
           <span>加為 肥牡蠣 LINE 好友</span>
@@ -915,17 +958,21 @@
     }
 
     async function handleFormSubmit(e) {
-      e.preventDefault();
+      if (e && e.preventDefault) {
+        e.preventDefault();
+      }
 
       const submitBtn = document.getElementById('submit-btn');
       const originalBtnHTML = submitBtn.innerHTML;
 
-      // 防止重複點擊
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fa-solid fa-spinner animate-spin"></i> 送出中...';
 
       const nameVal = document.getElementById('input-name').value;
       const emailVal = document.getElementById('input-email').value;
+      const genderVal = document.getElementById('input-gender').value;
+      const ageVal = document.getElementById('input-age').value;
+      const relationshipVal = document.getElementById('input-relationship').value;
       const faithVal = document.getElementById('input-faith').value;
       const sourceVal = document.getElementById('input-source').value;
       const messageVal = document.getElementById('input-message').value;
@@ -933,10 +980,12 @@
 
       const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfgCBcgPKvf96QfugK217oziW_GOtNx-B0Q2dHmC-Z3UeodxA/formResponse';
 
-      // 構建 Google 表單 URL 參數
       const bodyParams = new URLSearchParams();
       bodyParams.append('entry.1420419665', nameVal);
       bodyParams.append('entry.1018502108', emailVal);
+      bodyParams.append('entry.1668738351', genderVal);
+      bodyParams.append('entry.875462988', ageVal);
+      bodyParams.append('entry.2108454617', relationshipVal);
       bodyParams.append('entry.545530129', faithVal);
       bodyParams.append('entry.1535198446', sourceVal);
       bodyParams.append('entry.1427924760', messageVal);
@@ -944,7 +993,9 @@
         bodyParams.append('entry.1092313031', '同意');
       }
 
-      // 單一標準 POST 發送，確保只寫入 1 筆回覆
+      let sent = false;
+
+      // 通道 1：標準 fetch 背景發送（主要通道）
       try {
         await fetch(formUrl, {
           method: 'POST',
@@ -954,25 +1005,75 @@
           },
           body: bodyParams.toString()
         });
+        sent = true;
       } catch (err) {
-        console.log('Form submission completed');
+        console.log('Fetch channel bypass:', err);
       }
 
-      // 恢復按鈕、重置表單並顯示成功視窗
+      // 通道 2：若通道 1 失敗，嘗試 sendBeacon 備援
+      if (!sent && navigator.sendBeacon) {
+        try {
+          sent = navigator.sendBeacon(formUrl, bodyParams);
+        } catch (err) {
+          console.log('Beacon channel bypass:', err);
+        }
+      }
+
+      // 通道 3：若前兩者皆失敗，才開啟動態隱藏 Iframe 備援
+      if (!sent) {
+        try {
+          submitToHiddenIframe(formUrl, bodyParams);
+        } catch (err) {
+          console.log('Iframe channel bypass:', err);
+        }
+      }
+
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnHTML;
         document.getElementById('signup-form').reset();
         showSuccessModal();
-      }, 400);
+      }, 500);
+    }
+
+    function submitToHiddenIframe(actionUrl, params) {
+      let iframe = document.getElementById('gform-target-iframe');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'gform-target-iframe';
+        iframe.name = 'gform-target-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+      
+      let form = document.createElement('form');
+      form.action = actionUrl;
+      form.method = 'POST';
+      form.target = 'gform-target-iframe';
+      
+      for (const [key, value] of params.entries()) {
+        let input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+      
+      document.body.appendChild(form);
+      form.submit();
+      setTimeout(() => { form.remove(); }, 1200);
     }
 
     function showSuccessModal() {
       const modal = document.getElementById('success-modal');
       if (modal) {
         modal.classList.remove('opacity-0', 'pointer-events-none');
-        modal.firstElementChild.classList.remove('scale-95');
-        modal.firstElementChild.classList.add('scale-100');
+        const modalCard = modal.firstElementChild;
+        if (modalCard) {
+          modalCard.classList.remove('scale-95');
+          modalCard.classList.add('scale-100');
+        }
+        modal.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
 
@@ -980,8 +1081,11 @@
       const modal = document.getElementById('success-modal');
       if (modal) {
         modal.classList.add('opacity-0', 'pointer-events-none');
-        modal.firstElementChild.classList.remove('scale-100');
-        modal.firstElementChild.classList.add('scale-95');
+        const modalCard = modal.firstElementChild;
+        if (modalCard) {
+          modalCard.classList.remove('scale-100');
+          modalCard.classList.add('scale-95');
+        }
       }
     }
   </script>
